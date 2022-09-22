@@ -2,10 +2,11 @@ var express = require('express');
 
 app = express();
 port = process.env.PORT || 3000;
-mongoose = require('mongoose')
 livro = require('./api/models/livroModel');
 bodyParser = require('body-parser');
-  
+
+// Mongoose 
+mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 mongoose.connect('SEU LINK DO BANCO');
 
